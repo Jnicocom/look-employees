@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none
+}
+
+body {
+    color: #484E53;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #FCFAFA;
+}
+
+a {
+    color: inherit;
+}
+
+h2 {
+    color: #4D7690;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.body-card-wrap {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.body-card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+}
+
+.body-card__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 230px;
+    height: 60px;
+    background: url('/img/logo.png') center/contain no-repeat;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-employees {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.form-employees__label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-employees__label input {
+    margin-right: 10px;
+}
+
+.form-error {
+    color: palevioletred;
+    margin-top: 7px;
+    display: block;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+}
+
+.grid-item__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.form-employee {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.form-employee input,
+.form-employee select {
+    width: 100%;
+    font-size: 1em;
+    background-color: #fcfdfd;
+    padding: 15px;
+    border: 1px solid #aebfd5;
+    border-radius: 3px;
+}
+
+.button {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: center;
+    background-color: #5D8AA8;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.button:hover {
+    background-color: #1a202c;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+}
+
+footer {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .grid-item {
+        flex-direction: row;
+    }
+}
